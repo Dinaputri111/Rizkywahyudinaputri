@@ -1,0 +1,57 @@
+#program login ke dalam perhitungan gaji karyawan
+Pemilikprogram =[["Rizky wahyu dina putri", "2409116111"],
+                ["mahasiswi sisfor", "2409116111"]]
+
+def check_login(username, password) :
+    for user in Pemilikprogram :
+        if user[0] == username and user [1] == password :
+            return True
+    return False
+
+max_login = 3
+c = 0
+while c < max_login :
+    username = input("Masukkan nama Username : ")
+    password = input("Masukkan Password : ")
+    if check_login(username, password) :
+        print("Selamat datang " +username+ " Ke dalam program.")
+        break
+    else :
+        print ("Anda Gagal Login")
+        print("Kesempatan Login anda tersisa ", max_login - c - 1)
+        c += 1
+    if c == max_login :
+        print ("Kesempatan Login anda habis")
+        exit()
+
+def hitung_gaji(nama, nip, jam_kerja, tarif_kerja):
+    if jam_kerja > 160:
+        gaji_pokok = jam_kerja * tarif_kerja
+        bonus = 10/100 * gaji_pokok
+        total_gaji = gaji_pokok + bonus
+        print("----------PERHITUNGAN GAJI KARYAWAN----------")
+        print("Karyawan dengan nama " +nama+ " dengan nip " +nip)
+        print("Gaji pokok: Rp. " +str(gaji_pokok))
+        print("Bonus: Rp. " +str(bonus))
+        print("Total gaji: Rp. " +str(total_gaji))
+    else:
+        gaji_pokok = jam_kerja * tarif_kerja
+        total_gaji = gaji_pokok
+        print("----------PERHITUNGAN GAJI KARYAWAN----------")
+        print("Karyawan dengan nama" +nama+ "dengan nip" +nip)
+        print("Gaji pokok: Rp. " +str(gaji_pokok))
+        print("Bonus: Tidak ada")
+        print("Total gaji: Rp. " +str(gaji_pokok))
+
+while True: 
+    nama = input("Masukkan nama karyawan: ")
+    nip = input("Masukkan Nip karyawan: ")
+    jam_kerja = (float(input("Masukkan Jam kerja: ")))
+    tarif_kerja = (float(input("Masukkan tarif kerja: ")))
+
+    hitung_gaji(nama, nip, jam_kerja, tarif_kerja)
+
+    selesai = input("Apakah anda menghitung gaji karyawan lagi? (ya/tidak): ")
+    if selesai.lower() == "tidak":
+        print("Perhitungan gaji karyawan telah selesai. Terima kasih!") 
+        break
