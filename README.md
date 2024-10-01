@@ -15,3 +15,6 @@ Perulangan while true untuk memberikan inputan nama, nip, jam_kerja, tarif_kerja
 
 
 
+
+
+
