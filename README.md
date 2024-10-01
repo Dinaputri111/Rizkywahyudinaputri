@@ -1,4 +1,5 @@
-![Cuplikan layar 2024-10-01 091306](https://github.com/user-attachments/assets/10277f3d-48db-44f8-9496-ba855a6f1ccc)
+<img width="437" alt="image" src="https://github.com/user-attachments/assets/a727d89f-4183-4d07-b84c-89dab67d9963">
+
 
 
 
