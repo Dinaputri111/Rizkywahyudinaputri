@@ -1,3 +1,6 @@
+NAMA: Rizky wahyu dina putri
+Nim: 2409116111
+kelas: C
 ![image](https://github.com/user-attachments/assets/1079f86f-1cc2-4e0d-9520-387d7e9491ce)
 Pada program login, terdapat list data pemilikprogram yang terdapat 2 parameter yaitu username pada indeks ke 0 dan password pada indeks ke 1. Parameter tersebut diberi nama rizky wahyu dina putri sebagai pembuat program dan password yang berisi nim. 
 def mendefisinisikan fungsi check_login yang digunakan untuk memeriksa apakah nilai inputan username dan password sesuai dengan yang ada pada data list.
